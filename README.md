@@ -10,12 +10,12 @@
 ### What is Ansible?
 
  Ansible is an open source software provisioning, configuration management an application-deployment 
-tool enabling infrastructure as code. It runs on manu Unix-like systems, and cam configure both Unix-like systems as well as Microsoft Windows
+tool enabling infrastructure as code. It runs on many Unix-like systems, and can configure both Unix-like systems as well as Microsoft Windows
 
 Ansible aims to be:
 1. Clear - Ansible uses a simple syntax (YAML) and is easy for anyone (developers, sysadmins,
 managers) to understand. APIs are simple and sensible.
-2. Fast - Fast to learn, fast to set up—especially considering you don’t need to install extra agents
+2. Fast - Fast to learn, fast to set up, especially considering you don’t need to install extra agents
 or daemons on all your servers!
 3. Complete - Ansible does three things in one, and does them very well. Ansible’s ‘batteries
 included’ approach means you have everything you need in one complete package.
