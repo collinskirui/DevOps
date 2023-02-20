@@ -131,12 +131,12 @@ ansible testserver -m service -a 'name-apache state=started'
 
 
 ## Run Ansible commands Asynchronous & Parallel
-Playbook perfomance and bottleneck polling
-Asynchronous job identifiers
-Asynchronous status handling
-Serial execution
-Batch execution
-Alternative execution strategies
+- Playbook perfomance and bottleneck polling
+- Asynchronous job identifiers
+- Asynchronous status handling
+- Serial execution
+- Batch execution
+- Alternative execution strategies
 
 sudo vi slow_playbook.yml
 
@@ -149,34 +149,33 @@ sudo vi include_playbook.yml
 cat play1_task2.yml
 
 ## Difference between static and dynamic include/import approaches
-Recommendation for choosing approach
+_Recommendation for choosing approach_
 
-include_tasks=Dynamic
-include=static by default, can be dynamic
-import_task=static
+- include_tasks=Dynamic
+- include=static by default, can be dynamic
+- import_task=static
 
-include=depreceated
-include_task=*dynamic , can be used in loops
-import=static , cannot be used with loops
+- include=depreceated
+- include_task=*dynamic , can be used in loops
+- import=static , cannot be used with loops
 
 
 
 ## Ansible Roles 
-Ansible roles are a way to group multiple task together into container to do the automation in very effective mannner with clean directory str
+- Ansible roles are a way to group multiple task together into container to do the automation in very effective mannner with clean directory str
 ucture.
-Roles are the set of task and additional files for alternation roles which allows
-you break up the configuration
+- Roles are the set of task and additional files for alternation roles which allows you break up the configuration
 -Allows reuse of code by anyone
 - Reduce the syntax error
 -Allow one to create a directory structure 
 
 ### How to Create a role
-ansible-galaxy init /etc/ansible/roles/http
+_ansible-galaxy init /etc/ansible/roles/http_
 
 ### How to Remove a role
-ansible-galaxy remove /etc/ansible/roles/
+_ansible-galaxy remove /etc/ansible/roles/_
 
-ansible-galaxy init role_name- Running this command creates an example role in
+```ansible-galaxy init role_name``` - Running this command creates an example role in
 the current working directory, which you can modify to suit your needs. Using the init
 command also ensures the role is structured correctly in case you want to someday
 contribute the role to Ansible Galaxy
@@ -188,13 +187,18 @@ contribute the role to Ansible Galaxy
 Ansible vault is a feature of ansible that allows you to keep sensitive data such as password or encrypted
 file rather than as plain text or values
 
-Create: To create ansible vault file in the encrypted file
+1. Create: To create ansible vault file in the encrypted file
 View: To view data in the ecrypted file
-Edit: To edit ecrypted file
-Encrypt: To encrypt unecrypted file
-Decrypt: To decrypt an ecrypted file
---ask-vault-pass: to provide password
---vault-password file: to pass a vault passowrd through a file
+2. Edit: To edit ecrypted file
+3. Encrypt: To encrypt unecrypted file
+4. Decrypt: To decrypt an ecrypted file
 
-ansible-vault create vault Testing_playbook.yml
+--ask-vault-pass: to provide password
+* --vault-password file: to pass a vault passowrd through a file* 
+
+- ansible-vault create vault Testing_playbook.yml
+
+## License
+
+Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
