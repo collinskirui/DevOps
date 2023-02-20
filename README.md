@@ -28,7 +28,7 @@ on your servers.
 For this demo, we will be using two Ubuntu 22.04 LTS virtual box machine
 
 ## Installing Ansible
-## Ansible Lab Set Up with Oracle 
+## Ansible Lab Set Up with Oracle VirtualBox
 - sudo apt remove ansible
 - sudo apt update
 - sudo apt install software-properties-common
