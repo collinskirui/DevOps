@@ -49,26 +49,26 @@ matches servers (IP addresses or domain names) to groups
 Default ansible file path
 /etc/ansible/hosts
 <p align="left">
-<img src="v1.png" alt="" width="30%" height="20%" />
+<img src="v1.png" alt="" />
 </p>
 ## Running your first Ad-Hoc Ansible command
 An ad-hoc command consists of two parameters: The host group that defines on what machines to run the task against and the Ansible module to run.
 
  ansible testserver -m ping
 <p align="left">
-<img src="v2.png" alt="" width="30%" height="20%" />
+<img src="v2.png" alt="" />
 </p>
  ansible testserver -a 'uptime'
 <p align="left">
-<img src="v3.png" alt="" width="25%" height="15%"/>
+<img src="v3.png" alt="" />
 </p>
  ansible testserver -m command -a 'df -h'
 <p align="left">
-<img src="v4.png" alt="" width="25%" height="15%" />
+<img src="v4.png" alt=""  />
 </p>
  ansible testserver -m command -a 'ls -l'
 <p align="left">
-<img src="v5.png" alt="" width="25%" height="15%" />
+<img src="v5.png" alt=""  />
 </p>
 
 
@@ -80,26 +80,26 @@ How custom fact can be used in environment without super access
 
  ansible testserver -m setup
 <p align="left">
-<img src="v6.png" alt="" width="25%" height="15%" />
+<img src="v6.png" alt=""  />
 </p>
  ansible testserver -m setup -a 'gather_subset=network'| more
 <p align="left">
-<img src="v7.png" alt="" width="25%" height="15%" />
+<img src="v7.png" alt=""  />
 </p>
  ansible testserver -m setup -a 'filter=ansible_mem*'
 <p align="left">
-<img src="v8.png" alt="" width="25%" height="15%" />
+<img src="v8.png" alt=""  />
 </p>
  ansible testserver -m setup -a 'filter=ansible_memtotal_mb'
 <p align="left">
-<img src="v9.png" alt="" width="25%" height="15%" />
+<img src="v9.png" alt=""  />
 </p>
 
 
 ## Your first Ansible playbook
 cat facts_playbook.yml
 <p align="left">
-<img src="v10.png" alt="" width="25%" height="15%" />
+<img src="v10.png" alt=""  />
 </p>
 ansible-playbook facts_playbook.yml
 
@@ -109,14 +109,14 @@ bash facts.d
 Ansible Register and When to use
 cat register_playbook.yml
 <p align="left">
-<img src="v11.png" alt="" width="25%" height="15%" />
+<img src="v11.png" alt=""  />
 </p>
 
 ansible-playbook register_playbook.yml
 
 cat register2_playbook.yml
 <p align="left">
-<img src="v12.png" alt="" width="25%" height="15%" />
+<img src="v12.png" alt=""  />
 </p>
 
 
@@ -124,7 +124,7 @@ cat register2_playbook.yml
 ## Ansible Playbook and Dynamic Facts with Labs
 cat fact3_playbook.yml
 <p align="left">
-<img src="v13.png" alt="" width="25%" height="15%" />
+<img src="v13.png" alt=""  />
 </p>
 ansible testserver -m service -a 'name-apache state=started'
 
