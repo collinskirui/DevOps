@@ -1,7 +1,7 @@
 ## Ansible Practicals
 
 <p align="center">
- <img src="logo.png?raw=true" alt="Ansible Practicals Logo" width="30%" height="20%" />
+ <img src="images/logo.png?raw=true" alt="Ansible Practicals Logo" width="30%" height="20%" />
 </p>
 
 ## Ansible Architecture
