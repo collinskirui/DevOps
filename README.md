@@ -163,12 +163,12 @@ _Recommendation for choosing approach_
 
 
 ## Ansible Roles 
-# Ansible roles are a way to group multiple task together into container to do the automation in very effective mannner with clean directory str
+- Ansible roles are a way to group multiple task together into container to do the automation in very effective mannner with clean directory str
 ucture.
-#  Roles are the set of task and additional files for alternation roles which allows you break up the configuration
-# Allows reuse of code by anyone
-# Reduce the syntax error
-# Allow one to create a directory structure 
+-  Roles are the set of task and additional files for alternation roles which allows you break up the configuration
+- Allows reuse of code by anyone
+- Reduce the syntax error
+- Allow one to create a directory structure 
 
 ### How to Create a role
 _ansible-galaxy init /etc/ansible/roles/http_
