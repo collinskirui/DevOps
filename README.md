@@ -9,10 +9,10 @@
 
 ### What is Ansible?
 
-- Ansible is an open source software provisioning, configuration management an application-deployment 
+ Ansible is an open source software provisioning, configuration management an application-deployment 
 tool enabling infrastructure as code. It runs on manu Unix-like systems, and cam configure both Unix-like systems as well as Microsoft Windows
 
-- Ansible aims to be:
+Ansible aims to be:
 1. Clear - Ansible uses a simple syntax (YAML) and is easy for anyone (developers, sysadmins,
 managers) to understand. APIs are simple and sensible.
 2. Fast - Fast to learn, fast to set up—especially considering you don’t need to install extra agents
@@ -51,8 +51,10 @@ _/etc/ansible/hosts_
 <p align="left">
 <img src="v1.png" alt="" />
 </p>
-## Running your first Ad-Hoc Ansible command
-```An ad-hoc command consists of two parameters: The host group that defines on what machines to run the task against and the Ansible module to run.```
+
+###  Running your first Ad-Hoc Ansible command
+
+An ad-hoc command consists of two parameters: The host group that defines on what machines to run the task against and the Ansible module to run.
 
 _ ansible testserver -m ping_
 <p align="left">
