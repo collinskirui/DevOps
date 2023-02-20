@@ -1,6 +1,6 @@
 ## Ansible Practicals
 
-<p align="left">
+<p align="center">
  <img src="logo.png?raw=true" alt="Ansible Practicals Logo" width="30%" height="20%" />
 </p>
 
@@ -75,12 +75,12 @@ _ ansible testserver -m command -a 'ls -l'_
 
 
 ## Ansible Facts with Labs (Learning about your environment)
-```The setup module and how this relates to fact gathering```
-```Filtering for specific facts```
-```The creation/execution of custom facts```
-```How custom fact can be used in environment without super access```
+- The setup module and how this relates to fact gathering
+- Filtering for specific facts
+- The creation/execution of custom facts
+- How custom fact can be used in environment without super access
 
-_ ansible testserver -m setup_
+ ansible testserver -m setup
 <p align="left">
 <img src="v6.png" alt=""  />
 </p>
@@ -103,12 +103,12 @@ _cat facts_playbook.yml_
 <p align="left">
 <img src="v10.png" alt=""  />
 </p>
-_ansible-playbook facts_playbook.yml_
+
 
 _sudo vi facts.d_
 _bash facts.d_
 
-Ansible Register and When to use
+## Ansible Register and When to use
 _cat register_playbook.yml_
 <p align="left">
 <img src="v11.png" alt=""  />
@@ -128,7 +128,6 @@ _cat fact3_playbook.yml_
 <p align="left">
 <img src="v13.png" alt=""  />
 </p>
-```ansible testserver -m service -a 'name-apache state=started'```
 
 
 
@@ -153,7 +152,7 @@ _cat play1_task2.yml_
 ## Difference between static and dynamic include/import approaches
 _Recommendation for choosing approach_
 
-```include_tasks=Dynamic```
+```  include_tasks=Dynamic```
 ```include=static by default, can be dynamic```
 ```import_task=static```
 
@@ -164,12 +163,12 @@ _Recommendation for choosing approach_
 
 
 ## Ansible Roles 
-- Ansible roles are a way to group multiple task together into container to do the automation in very effective mannner with clean directory str
+# Ansible roles are a way to group multiple task together into container to do the automation in very effective mannner with clean directory str
 ucture.
-- Roles are the set of task and additional files for alternation roles which allows you break up the configuration
--Allows reuse of code by anyone
-- Reduce the syntax error
--Allow one to create a directory structure 
+#  Roles are the set of task and additional files for alternation roles which allows you break up the configuration
+# Allows reuse of code by anyone
+# Reduce the syntax error
+# Allow one to create a directory structure 
 
 ### How to Create a role
 _ansible-galaxy init /etc/ansible/roles/http_
