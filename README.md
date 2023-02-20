@@ -49,7 +49,7 @@ matches servers (IP addresses or domain names) to groups
 - Default ansible file path
 _/etc/ansible/hosts_
 <p align="left">
-<img src="v1.png" alt="" />
+<img src="images/v1.png" alt="" />
 </p>
 
 ###  Running your first Ad-Hoc Ansible command
@@ -58,19 +58,19 @@ An ad-hoc command consists of two parameters: The host group that defines on wha
 
 _ ansible testserver -m ping_
 <p align="left">
-<img src="v2.png" alt="" />
+<img src="images/v2.png" alt="" />
 </p>
  _ansible testserver -a 'uptime'_
 <p align="left">
-<img src="v3.png" alt="" />
+<img src="images/v3.png" alt="" />
 </p>
 _ ansible testserver -m command -a 'df -h'_
 <p align="left">
-<img src="v4.png" alt=""  />
+<img src="images/v4.png" alt=""  />
 </p>
 _ ansible testserver -m command -a 'ls -l'_
 <p align="left">
-<img src="v5.png" alt=""  />
+<img src="images/v5.png" alt=""  />
 </p>
 
 
@@ -82,26 +82,26 @@ _ ansible testserver -m command -a 'ls -l'_
 
  ansible testserver -m setup
 <p align="left">
-<img src="v6.png" alt=""  />
+<img src="images/v6.png" alt=""  />
 </p>
  _ansible testserver -m setup -a 'gather_subset=network'| more_
 <p align="left">
-<img src="v7.png" alt=""  />
+<img src="images/v7.png" alt=""  />
 </p>
 _ ansible testserver -m setup -a 'filter=ansible_mem*'_
 <p align="left">
-<img src="v8.png" alt=""  />
+<img src="images/v8.png" alt=""  />
 </p>
  _ansible testserver -m setup -a 'filter=ansible_memtotal_mb'_
 <p align="left">
-<img src="v9.png" alt=""  />
+<img src="images/v9.png" alt=""  />
 </p>
 
 
 ## Your first Ansible playbook
 _cat facts_playbook.yml_
 <p align="left">
-<img src="v10.png" alt=""  />
+<img src="images/v10.png" alt=""  />
 </p>
 
 
@@ -111,14 +111,14 @@ _bash facts.d_
 ## Ansible Register and When to use
 _cat register_playbook.yml_
 <p align="left">
-<img src="v11.png" alt=""  />
+<img src="images/v11.png" alt=""  />
 </p>
 
 _ansible-playbook register_playbook.yml_
 
 _cat register2_playbook.yml_
 <p align="left">
-<img src="v12.png" alt=""  />
+<img src="images/v12.png" alt=""  />
 </p>
 
 
@@ -126,7 +126,7 @@ _cat register2_playbook.yml_
 ## Ansible Playbook and Dynamic Facts with Labs
 _cat fact3_playbook.yml_
 <p align="left">
-<img src="v13.png" alt=""  />
+<img src="images/v13.png" alt=""  />
 </p>
 
 
