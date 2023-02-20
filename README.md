@@ -48,20 +48,20 @@ a hosts file (at /etc/hosts) that matches IP addresses to domain names, an Ansib
 matches servers (IP addresses or domain names) to groups
 Default ansible file path
 /etc/ansible/hosts
-
+<img src="v1.png" alt="" width="25%" height="15%" />
 
 ## Running your first Ad-Hoc Ansible command
 An ad-hoc command consists of two parameters: The host group that defines on what machines to run the task against and the Ansible module to run.
 
-ansible testserver -m ping
-<img src="v2.png" alt="" />
-ansible testserver -a 'uptime'
-<img src="v3.png" alt="" />
-ansible testserver -m command -a 'df -h'
-<img src="v4.png" alt="" />
-ansible testserver -m command -a 'ls -l'
-<img src="v5.png" alt="" />
-ansible testserver -m file -a "dest=/root/anaconda-ks.cfg mode=600"
+ ansible testserver -m ping
+<img src="v2.png" alt="" width="25%" height="15%" />
+ ansible testserver -a 'uptime'
+<img src="v3.png" alt="" width="25%" height="15%"/>
+ ansible testserver -m command -a 'df -h'
+<img src="v4.png" alt="" width="25%" height="15%" />
+ ansible testserver -m command -a 'ls -l'
+<img src="v5.png" alt="" width="25%" height="15%" />
+
 
 ## Ansible Facts with Labs (Learning about your environment)
 The setup module and how this relates to fact gathering
@@ -69,28 +69,38 @@ Filtering for specific facts
 The creation/execution of custom facts
 How custom fact can be used in environment without super access
 
-ansible testserver -m setup
-ansible testserver -m setup | more
-ansible testserver -m setup -a 'gather_subset=network'| more
-ansible testserver -m setup -a 'filter=ansible_mem*'
-ansible testserver -m setup -a 'filter=ansible_memtotal_mb'
+ ansible testserver -m setup
+<img src="v6.png" alt="" width="25%" height="15%" />
+ ansible testserver -m setup -a 'gather_subset=network'| more
+<img src="v7.png" alt="" width="25%" height="15%" />
+ ansible testserver -m setup -a 'filter=ansible_mem*'
+<img src="v8.png" alt="" width="25%" height="15%" />
+ ansible testserver -m setup -a 'filter=ansible_memtotal_mb'
+<img src="v9.png" alt="" width="25%" height="15%" />
+
 
 ## Your first Ansible playbook
-sudo vi facts_playbook.yml
+cat facts_playbook.yml
+<img src="v10.png" alt="" width="25%" height="15%" />
 ansible-playbook facts_playbook.yml
 
 sudo vi facts.d
 bash facts.d
 
 Ansible Register and When to use
-sudo vi register_playbook.yml
+cat register_playbook.yml
+<img src="v11.png" alt="" width="25%" height="15%" />
+
 ansible-playbook register_playbook.yml
 
-sudo vi register2_playbook.yml
+cat register2_playbook.yml
+<img src="v12.png" alt="" width="25%" height="15%" />
+
 
 
 ## Ansible Playbook and Dynamic Facts with Labs
 cat fact3_playbook.yml
+<img src="v13.png" alt="" width="25%" height="15%" />
 ansible testserver -m service -a 'name-apache state=started'
 
 
