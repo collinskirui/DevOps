@@ -1,17 +1,16 @@
 ## Ansible Practicals
 
 <p align="center">
- <img src="logo.png?raw=true" alt="Ansible Practicals Logo" width="50%" height="50%" />
+ <img src="logo.png?raw=true" alt="Ansible Practicals Logo" width="30%" height="20%" />
 </p>
 
 ## Ansible Architecture
-[![Ansible Architecture](https://www.kreyman.de/images/Sonstige/Ansible/Ansible_Architecture_Diagram.png)]
+![Ansible Architecture](https://www.kreyman.de/images/Sonstige/Ansible/Ansible_Architecture_Diagram.png)
 
-### What is Ansible?(https://roadmap.sh)
+### What is Ansible?
 
 Ansible is an open source software provisioning, configuration management an application-deployment 
-tool enabling infrastructure as code. It runs on manu Unix-like systems, and cam configure both
-Unix-like systems as well as Microsoft Windows
+tool enabling infrastructure as code. It runs on manu Unix-like systems, and cam configure both Unix-like systems as well as Microsoft Windows
 
 Ansible aims to be:
 1. Clear - Ansible uses a simple syntax (YAML) and is easy for anyone (developers, sysadmins,
@@ -40,7 +39,7 @@ now you can get the ansible configuration location
 
 
 ssh-keygen
-ssh-copy-id -i /home/<your dir>/.ssh/id_rsa.pub user@<ip address>
+ssh-copy-id -i /home/your dir/.ssh/id_rsa.pub user@ip address
 
 
 ## Creating a basic inventory file
@@ -55,9 +54,13 @@ Default ansible file path
 An ad-hoc command consists of two parameters: The host group that defines on what machines to run the task against and the Ansible module to run.
 
 ansible testserver -m ping
+<img src="v2.png" alt="" />
 ansible testserver -a 'uptime'
+<img src="v3.png" alt="" />
 ansible testserver -m command -a 'df -h'
+<img src="v4.png" alt="" />
 ansible testserver -m command -a 'ls -l'
+<img src="v5.png" alt="" />
 ansible testserver -m file -a "dest=/root/anaconda-ks.cfg mode=600"
 
 ## Ansible Facts with Labs (Learning about your environment)
