@@ -1,14 +1,14 @@
 ## Open Source Monitoring Project using Grafana, Prometheus Server, cAdvisor and Node Exporter
 
 <p align="center">
- <img src=".../images/progfraflogo.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/progfraflogo.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 ## 
 [![Flow Diagaram]
 
 <p align="center">
- <img src=".../images/diagram.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/diagram.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 
