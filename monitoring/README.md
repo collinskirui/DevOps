@@ -59,17 +59,34 @@ touch promgrafnode/prometheus/prometheus.yml
 
 4. Copy repo's docker-compose.yml and edit the user id to match with your own id if it is different
 ```To check your user id run (id -u) in your machine the change _user_ , _PUID_ and _PGID_.```
-
+<p align="left">
+ <img src="images/10.png?raw=true" alt="logo" />
+</p>
 5. Run _docker-compose up -d_
-
+<p align="center">
+ <img src="images/5.png?raw=true" alt="logo" />
+</p>
 6. Run _docker-compose ps_
+<p align="right">
+ <img src="images/6.png?raw=true" alt="logo" />
+</p>
 
 7. Configure Prometheus -> prometheus.yml file that you we will pull metrics from and feed the Grafana
   _docker stop prometheus_
-  _docker stop prometheus_
+  _docker start prometheus_
 
 8. Login to the Grafana-> Point your Grafana to the Prometheus Data Source-> Populate your address with the one of Prometheus installed.
+<p align="left">
+ <img src="images/8.png?raw=true" alt="logo" />
+</p>
 
+<p align="left">
+ <img src="images/11.png?raw=true" alt="logo" />
+</p>
+
+<p align="left">
+ <img src="images/12.png?raw=true" alt="logo" />
+</p>
 9. Import Community Dashboards either upload json file of paste the Clipboard ID from community sites
 
 
