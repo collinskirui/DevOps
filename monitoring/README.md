@@ -63,11 +63,11 @@ touch promgrafnode/prometheus/prometheus.yml
  <img src="images/10.png?raw=true" alt="logo" />
 </p>
 5. Run _docker-compose up -d_
-<p align="center">
+<p align="left">
  <img src="images/5.png?raw=true" alt="logo" />
 </p>
 6. Run _docker-compose ps_
-<p align="right">
+<p align="left">
  <img src="images/6.png?raw=true" alt="logo" />
 </p>
 
