@@ -7,7 +7,7 @@
 ## Flow Diagaram
 
 <p align="center">
- <img src="images/diagram.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/diagram.png?raw=true" alt="Logo" width="80%" height="80%" />
 </p>
 
 ## Prometheus
@@ -60,15 +60,15 @@ touch promgrafnode/prometheus/prometheus.yml
 4. Copy repo's docker-compose.yml and edit the user id to match with your own id if it is different
 ```To check your user id run (id -u) in your machine the change _user_ , _PUID_ and _PGID_.```
 <p align="left">
- <img src="images/10.png?raw=true" alt="logo" width ="100%" height= "100%"/>
+ <img src="images/10.png?raw=true" alt="logo" width ="70%" height= "70%"/>
 </p>
 5. Run _docker-compose up -d_
 <p align="left">
- <img src="images/5.png?raw=true" alt="logo" width="100%" height="100%"/>
+ <img src="images/5.png?raw=true" alt="logo" width="70%" height="70%"/>
 </p>
 6. Run _docker-compose ps_
 <p align="left">
- <img src="images/6.png?raw=true" alt="logo" width="100%" height="100%"/>
+ <img src="images/6.png?raw=true" alt="logo" width="70%" height="70%"/>
 </p>
 
 7. Configure Prometheus -> prometheus.yml file that you we will pull metrics from and feed the Grafana
