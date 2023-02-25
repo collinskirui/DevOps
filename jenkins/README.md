@@ -35,7 +35,7 @@ without errors
 </p>
 
 _If java is not installed kindly check your system properties and install the necessary java package for example for my Ubuntu 22.04 LTS i installed:
-22.04 LTS, I installed using:
+22.04 LTS, I installed using:_
 
     ```sudo apt install openjdk-11-jre-headless```
 
