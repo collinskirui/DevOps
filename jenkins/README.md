@@ -37,7 +37,7 @@ without errors
 _If java is not installed kindly check your system properties and install the necessary java package for example for my Ubuntu 22.04 LTS i installed:
 22.04 LTS, I installed using:_
 
-    ```sudo apt install openjdk-11-jre-headless```
+  **sudo apt install openjdk-11-jre-headless**
 
 2. Add the repository key to your system
 
@@ -99,7 +99,7 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
  <img src="images/unlock_jenkins.png?raw=true" alt="Logo" width="100%" height="100%" />
 </p>
 
-14. Navigate to to secrets directory by typing ```cd /var/lib/Jenkins/sercrets```
+14. Navigate to to secrets directory by typing ```cd /var/lib/jenkins/secrets```
 
 <p align="left">
  <img src="images/secret.png?raw=true" alt="Logo" width="50%" height="50%" />
@@ -126,8 +126,10 @@ or
 </p>
 
 
-- At this point, you have completed a successful installation of Jenkins on your VM
+**At this point, you have completed a successful installation of Jenkins on your VM**
 
+GitHub  emoji!
+:+1: :sparkles: :tada: :octocat:
 
 ## Contributing
 
