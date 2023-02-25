@@ -1,12 +1,14 @@
+### Jenkins 
+
+<p align="center">
+ <img src="images/jenkins_logo.png?raw=true" alt="Logo" width="27%" height="27%" />
+</p>
+
 ### Jenkins Overview
 - Jenkins is one of the most popular free open-source CI solutions that is widely used in software engineering
 - Completely free, easy to install and rich in features and plugins,as many as 1500 different plugins are available for Jenkins
 - Supports distributed builds with master-slave architecture
 - Simple and user-friendly interface
-
-<p align="center">
- <img src="images/jenkins_logo.png?raw=true" alt="Logo" width="50%" height="50%" />
-</p>
 
 
 ### Why Do We Need Jenkins
@@ -19,7 +21,7 @@ without errors
 ### Jenkins Architecture
 
 <p align="center">
- <img src="images/architecture.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/architecture.png?raw=true" alt="Logo" width="80%" height="80%" />
 </p>
 
 
@@ -28,7 +30,7 @@ without errors
 1. Check if you have java installed in your machine using this command:
    
     ```java --version```
-<p align="center">
+<p align="left">
  <img src="images/java_version.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
@@ -53,7 +55,7 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 
 5. Install Jenkins  ```sudo apt install jenkins```
 
-<p align="center">
+<p align="left">
  <img src="images/jenkins_install.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
@@ -62,7 +64,7 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 
 7. Check status  ```sudo systemctl status jenkins```
 
-<p align="center">
+<p align="left">
  <img src="images/jenkins_status.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
@@ -83,7 +85,7 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 
 11. Run ```sudo ufw status``` everything should be similiar as follows
 
-<p align="center">
+<p align="left">
  <img src="images/ufw.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
@@ -93,13 +95,13 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 
 - You should receive the Unlock Jenkins screen, which displays the location of the initial password:
 
-<p align="center">
- <img src="images/unlock_jenkins.png?raw=true" alt="Logo" width="50%" height="50%" />
+<p align="left">
+ <img src="images/unlock_jenkins.png?raw=true" alt="Logo" width="100%" height="100%" />
 </p>
 
 14. Navigate to to secrets directory by typing ```cd /var/lib/Jenkins/sercrets```
 
-<p align="center">
+<p align="left">
  <img src="images/secret.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
@@ -108,7 +110,7 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 
   -  Run ```more initialAdminPassword``` to obtain your password and go back to the jenkins browser to fill in
  
-<p align="center">
+<p align="left">
  <img src="images/password.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
@@ -119,8 +121,8 @@ or
 
 16. Install the suggested plugins and fill in your information details to set up your account
 
-<p align="center">
- <img src="images/jenkins_interface.png?raw=true" alt="Logo" width="50%" height="50%" />
+<p align="left">
+ <img src="images/jenkins_interface.png?raw=true" alt="Logo" width="100%" height="100%" />
 </p>
 
 
