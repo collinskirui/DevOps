@@ -16,6 +16,11 @@ without errors
 2. Developers also want their changes built and tested in a standardized environment
 -Jenkins provides a standardized build and test environment
 
+### Jenkins Architecture
+
+<p align="center">
+ <img src="architecture.png?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
 
 
 ### Step by Step Jenkins Set-Up in VM (Ubuntu 22.04 LTS)
@@ -30,57 +35,61 @@ without errors
 _If java is not installed kindly check your system properties and install the necessary java package for example for my Ubuntu 22.04 LTS i installed:
 22.04 LTS, I installed using:
 
-```sudo apt install openjdk-11-jre-headless```
+     ```sudo apt install openjdk-11-jre-headless```
 
 2. Add the repository key to your system
 
-```wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg```
+      ```wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg```
 
 The _gpg --dearmor_ command is used to convert the key into a format that apt recognizes. Next, let’s append the Debian package repository address to the server’s sources.list
 
 3. Append the Debian package repository address to the server’s sources.list:
 
-```sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'```
+     ```sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'```
 
 _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures that apt will verify files in the repository using the GPG key that you just downloaded._
 
-4. Run ```sudo apt update```
+4. Run   ```sudo apt update```
 
-5. Install Jenkins ```sudo apt install jenkins```
+5. Install Jenkins  ```sudo apt install jenkins```
 
 <p align="center">
  <img src="jenkins_install.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 
-6. Start Jenkins ```sudo systemctl start jenkins.service```
+6. Start Jenkins  ```sudo systemctl start jenkins.service```
 
-7. Check status ```sudo systemctl status jenkins```
+7. Check status  ```sudo systemctl status jenkins```
 
 <p align="center">
  <img src="jenkins_status.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 
-8. Set up Firewall Rules ```sudo ufw allow 8080```
+8. Set up Firewall Rules  ```sudo ufw allow 8080```
 
 9. Install open ssh server if not installed and enable it
 
-```sudo apt install openssh-server```
+      ```sudo apt install openssh-server```
 
-```sudo systemctl enable --now ssh```
+      ```sudo systemctl enable --now ssh```
 
 10. Enable the firewall  and open ssh
 
-  ```sudo ufw allow OpenSSH```
+      ```sudo ufw allow OpenSSH```
 
-  ```sudo ufw enable```
+      ```sudo ufw enable```
 
 11. Run ```sudo ufw status``` everything should be similiar as follows
 
-13. Set up Jenkins to your browser by first running ```ifconfig``` to see your machine's ip address
+<p align="center">
+ <img src="ufw.png?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
 
-14. To set up your installation, visit Jenkins on its default port, 8080, using your server domain name or your IP address: http://your_server_ip_or_domain:8080
+12. Set up Jenkins to your browser by first running ```ifconfig``` to see your machine's ip address
+
+13. To set up your installation, visit Jenkins on its default port, 8080, using your server domain name or your IP address: ``` http://your_server_ip_or_domain:8080```
 
 - You should receive the Unlock Jenkins screen, which displays the location of the initial password:
 
