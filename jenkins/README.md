@@ -5,7 +5,7 @@
 - Simple and user-friendly interface
 
 <p align="center">
- <img src="jenkins_logo.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/jenkins_logo.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 
@@ -19,7 +19,7 @@ without errors
 ### Jenkins Architecture
 
 <p align="center">
- <img src="architecture.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/architecture.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 
@@ -29,13 +29,13 @@ without errors
    
     ```java --version```
 <p align="center">
- <img src="java_version.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/java_version.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 _If java is not installed kindly check your system properties and install the necessary java package for example for my Ubuntu 22.04 LTS i installed:
 22.04 LTS, I installed using:
 
-     ```sudo apt install openjdk-11-jre-headless```
+    ```sudo apt install openjdk-11-jre-headless```
 
 2. Add the repository key to your system
 
@@ -54,7 +54,7 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 5. Install Jenkins  ```sudo apt install jenkins```
 
 <p align="center">
- <img src="jenkins_install.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/jenkins_install.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 
@@ -63,7 +63,7 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 7. Check status  ```sudo systemctl status jenkins```
 
 <p align="center">
- <img src="jenkins_status.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/jenkins_status.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 
@@ -84,7 +84,7 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 11. Run ```sudo ufw status``` everything should be similiar as follows
 
 <p align="center">
- <img src="ufw.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/ufw.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 12. Set up Jenkins to your browser by first running ```ifconfig``` to see your machine's ip address
@@ -94,13 +94,13 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 - You should receive the Unlock Jenkins screen, which displays the location of the initial password:
 
 <p align="center">
- <img src="unlock_jenkins.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/unlock_jenkins.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 14. Navigate to to secrets directory by typing ```cd /var/lib/Jenkins/sercrets```
 
 <p align="center">
- <img src="secret.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/secret.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 
@@ -109,7 +109,7 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
   -  Run ```more initialAdminPassword``` to obtain your password and go back to the jenkins browser to fill in
  
 <p align="center">
- <img src="password.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/password.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 
@@ -120,7 +120,7 @@ or
 16. Install the suggested plugins and fill in your information details to set up your account
 
 <p align="center">
- <img src="jenkins_interface.png?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/jenkins_interface.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 
