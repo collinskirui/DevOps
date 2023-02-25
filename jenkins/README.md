@@ -1,8 +1,8 @@
 ### Jenkins Overview
-Jenkins is one of the most popular free open-source CI solutions that is widely used in software engineering
-Completely free, easy to install and rich in features and plugins,as many as 1500 different plugins are available for Jenkins
-Supports distributed builds with master-slave architecture
-Simple and user-friendly interface
+- Jenkins is one of the most popular free open-source CI solutions that is widely used in software engineering
+- Completely free, easy to install and rich in features and plugins,as many as 1500 different plugins are available for Jenkins
+- Supports distributed builds with master-slave architecture
+- Simple and user-friendly interface
 
 <p align="center">
  <img src="progfraflogo.png?raw=true" alt="Logo" width="50%" height="50%" />
@@ -50,7 +50,7 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 
 7. Check status ```sudo systemctl status jenkins```
 
-8.Set up Firewall Rules ```sudo ufw allow 8080```
+8. Set up Firewall Rules ```sudo ufw allow 8080```
 
 9. Install open ssh server if not installed and enable it
 
@@ -70,18 +70,21 @@ _The [signed-by=/usr/share/keyrings/jenkins.gpg] portion of the line ensures tha
 
 14. To set up your installation, visit Jenkins on its default port, 8080, using your server domain name or your IP address: http://your_server_ip_or_domain:8080
 
-You should receive the Unlock Jenkins screen, which displays the location of the initial password:
+- You should receive the Unlock Jenkins screen, which displays the location of the initial password:
 
 
 14. Navigate to to secrets directory by typing ```cd /var/lib/Jenkins/sercrets```
 
 15. List with `ls` command you should be able to see ```initialAdminPassword``` file 
-     Run ```more initialAdminPassword``` to obtain your password and go back to the jenkins browser to fill in
+
+  -  Run ```more initialAdminPassword``` to obtain your password and go back to the jenkins browser to fill in
+ 
 or
-     Run ```sudo cat /var/lib/jenkins/secrets/initialAdminPassword```
+
+  -  Run ```sudo cat /var/lib/jenkins/secrets/initialAdminPassword```
 
 16. Install the suggested plugins and fill in your information details to set up your account
 
 
-At this point, you have completed a successful installation of Jenkins on your VM
+- At this point, you have completed a successful installation of Jenkins on your VM
 
