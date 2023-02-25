@@ -34,8 +34,7 @@ without errors
  <img src="images/java_version.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
-**If java is not installed kindly check your system properties and install the necessary java package for example for my Ubuntu 22.04 LTS i installed:
-22.04 LTS, I installed using:**
+**If java is not installed kindly check your system properties and install the necessary java package for example for my Ubuntu 22.04 LTS i installed by running:**
 
   ```sudo apt install openjdk-11-jre-headless```
 
