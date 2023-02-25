@@ -1,17 +1,17 @@
-### Jenkins 
+## Jenkins 
 
 <p align="center">
  <img src="images/jenkins_logo.png?raw=true" alt="Logo" width="27%" height="27%" />
 </p>
 
-### Jenkins Overview
+## Jenkins Overview
 - Jenkins is one of the most popular free open-source CI solutions that is widely used in software engineering
 - Completely free, easy to install and rich in features and plugins,as many as 1500 different plugins are available for Jenkins
 - Supports distributed builds with master-slave architecture
 - Simple and user-friendly interface
 
 
-### Why Do We Need Jenkins
+## Why Do We Need Jenkins
 1. Developers making code changes in parallel want to make sure that their changes integrate
 without errors
 -Without Jenkins, manual integration testing happens infrequently and it is time-consuming
@@ -25,7 +25,7 @@ without errors
 </p>
 
 
-### Step by Step Jenkins Set-Up in VM (Ubuntu 22.04 LTS)
+## Step by Step Jenkins Set-Up in VM (Ubuntu 22.04 LTS)
 
 1. Check if you have java installed in your machine using this command:
    
@@ -34,10 +34,10 @@ without errors
  <img src="images/java_version.png?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
-_If java is not installed kindly check your system properties and install the necessary java package for example for my Ubuntu 22.04 LTS i installed:
-22.04 LTS, I installed using:_
+**If java is not installed kindly check your system properties and install the necessary java package for example for my Ubuntu 22.04 LTS i installed:
+22.04 LTS, I installed using:**
 
-  **sudo apt install openjdk-11-jre-headless**
+  ```sudo apt install openjdk-11-jre-headless```
 
 2. Add the repository key to your system
 
@@ -126,10 +126,8 @@ or
 </p>
 
 
-**At this point, you have completed a successful installation of Jenkins on your VM**
+**At this point, you have completed a successful installation of Jenkins on your VM** :+1: :sparkles: :tada: :octocat:
 
-GitHub  emoji!
-:+1: :sparkles: :tada: :octocat:
 
 ## Contributing
 
