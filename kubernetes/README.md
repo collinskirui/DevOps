@@ -62,7 +62,7 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
    ```curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl```
 
 <p align="left">
- <img src="images/kubectl_install.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/kubectl_install.jpg?raw=true" alt="Logo" width="80%" height="80%" />
 </p>
 
   Make the kubectl binary executable
