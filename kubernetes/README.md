@@ -1,7 +1,7 @@
 ## Kubernetes
 
 <p align="center">
- <img src="images/kubernetes_logo.jpg?raw=true" alt="Logo" width="30%" height="20%" />
+ <img src="images/kubernetes_logo.png?raw=true" alt="Logo" width="30%" height="20%" />
 </p>
 
 ## Kubernetes Architecture
