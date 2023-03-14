@@ -92,7 +92,7 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
   To avoid this error:
 
 <p align="left">
- <img src="images/minikube_error.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/minikube error.jpg?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
 1. Install docker if you do not have in your machine 
