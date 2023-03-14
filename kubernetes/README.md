@@ -1,7 +1,7 @@
 ## Kubernetes
 
 <p align="center">
- <img src="images/kubernetes_logo.png?raw=true" alt="Logo" width="30%" height="20%" />
+ <img src="images/kubernetes_logo.png?raw=true" alt="Logo" width="27%" height="27%" />
 </p>
 
 ## Kubernetes Architecture
@@ -28,6 +28,10 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
  
  ```sudo apt-get purge kubeadm kubectl kubelet kubernetes-cni kube*```
   
+<p align="left">
+ <img src="images/purge.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
+
   Update Your System
 
    ```sudo apt update```
@@ -35,6 +39,10 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
   Install Minikube
 
    ```wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64```
+
+<p align="left">
+ <img src="images/wget.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
 
    ```chmod +x minikube-linux-amd64```
 
@@ -44,10 +52,18 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
 
    ```minikube version```
 
+<p align="left">
+ <img src="images/minikube.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
+
   Install kubectl on Ubuntu
   We need kubectl which is a command line tool used to deploy and manage applications on Kubernetes:
 
    ```curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl```
+
+<p align="left">
+ <img src="images/kubectl_install.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
 
   Make the kubectl binary executable
 
@@ -61,15 +77,32 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
 
    ```kubectl version -o json  --client```
 
+<p align="left">
+ <img src="images/kubectl_version.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
+
   Start Minikube on Your Ubuntu
 
    ```minikube start```
 
+<p align="left">
+ <img src="images/minikube_start.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
+
   To avoid this error:
+
+<p align="left">
+ <img src="images/minikube-error.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
+
 1. Install docker if you do not have in your machine 
 
 
 ```sudo apt install docker.io -y```
+
+<p align="left">
+ <img src="images/docker_install.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
 
 2. Create the docker group if not exist 
 
@@ -81,6 +114,10 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
 
 ```sudo usermod -aG docker [user]```
 
+<p align="left">
+ <img src="images/docker_group.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
+
 4.Activate changes to the group
 
 
@@ -91,11 +128,19 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
 
 ```minikube start```
 
+<p align="left">
+ <img src="images/minikube_start.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
+
 
   Minikube Basic operations
   To check cluster status, run:
 
    ```kubectl cluster-info```
+
+<p align="left">
+ <img src="images/kubectl_cluster.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
 
   Note that Minikube configuration file is located under ~/.minikube/machines/minikube/config.json
  
@@ -103,9 +148,17 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
 
    ```kubectl config view```
 
+<p align="left">
+ <img src="images/kubectl_config.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
+
   To check running nodes:
 
    ```kubectl get nodes```
+
+<p align="left">
+ <img src="images/kubectl_nodes.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+</p>
 
 
 
