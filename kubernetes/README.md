@@ -92,10 +92,10 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
   To avoid this error:
 
 <p align="left">
- <img src="images/minikube error.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/minikube error.jpg?raw=true" alt="Logo" width="80%" height="80%" />
 </p>
 
-1. Install docker if you do not have in your machine 
+i. Install docker if you do not have in your machine 
 
 
 ```sudo apt install docker.io -y```
@@ -104,12 +104,12 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
  <img src="images/docker_install.jpg?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
-2. Create the docker group if not exist 
+ii. Create the docker group if not exist 
 
 
 ```sudo groupadd docker```
 
-3.Add user to the docker group
+iii. Add user to the docker group
 
 
 ```sudo usermod -aG docker [user]```
@@ -118,18 +118,18 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
  <img src="images/docker_group.jpg?raw=true" alt="Logo" width="50%" height="50%" />
 </p>
 
-4.Activate changes to the group
+iv.Activate changes to the group
 
 
 ```newgrp docker```
 
-5.Start minikube cluster
+v. Start minikube cluster
 
 
 ```minikube start```
 
 <p align="left">
- <img src="images/minikube_start.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/minikube_start.jpg?raw=true" alt="Logo" width="80%" height="80%" />
 </p>
 
 
