@@ -59,7 +59,7 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
 
   Check version
 
-    ```kubectl version -o json  --client```
+   ```kubectl version -o json  --client```
 
   Start Minikube on Your Ubuntu
 
@@ -95,13 +95,13 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
   Minikube Basic operations
   To check cluster status, run:
 
-    ```kubectl cluster-info```
+   ```kubectl cluster-info```
 
   Note that Minikube configuration file is located under ~/.minikube/machines/minikube/config.json
  
   To View Config, use:
 
-    ```kubectl config view```
+   ```kubectl config view```
 
   To check running nodes:
 
@@ -111,7 +111,7 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
 
   Enable Kubernetes Dashboard
 
-    ```minikube addons list```
+   ```minikube addons list```
 
 
   To enable a module use command:
@@ -120,7 +120,7 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
    ```minikube addons enable <module>```
 eg
 
-      ```minikube addons enable portainer```
+   ```minikube addons enable portainer```
 
 
   To open directly on your default browser, use:
@@ -132,6 +132,6 @@ eg
  To get the URL of the dashboard
 
 
-   ```minikube dashboard --url```
+    ```minikube dashboard --url```
 
 
