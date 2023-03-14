@@ -1,4 +1,4 @@
-## Welcome :octocat:, this is a Devops repository containing practical implementations of devops tools and step by step guide.
+## Welcome All :2faces-zebra:, this is a Devops repository containing practical implementations of devops tools and step by step guide.
 
 ## Contributing
 
