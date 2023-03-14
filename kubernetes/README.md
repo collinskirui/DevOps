@@ -126,12 +126,12 @@ eg
   To open directly on your default browser, use:
 
 
-    ```minikube dashboard```
+   ```minikube dashboard```
 
 
  To get the URL of the dashboard
 
 
-    ```minikube dashboard --url```
+   ```minikube dashboard --url```
 
 
