@@ -40,7 +40,7 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
 
    ```sudo mv minikube-linux-amd64 /usr/local/bin/minikube```
    
-  Confirm Your Minikub Version Installed
+  Confirm Your Minikube Version Installed
 
    ```minikube version```
 
