@@ -86,7 +86,7 @@ Kubernetes is an open-source platform used for maintaining and deploying a group
    ```minikube start```
 
 <p align="left">
- <img src="images/minikube_start.jpg?raw=true" alt="Logo" width="50%" height="50%" />
+ <img src="images/minikube_start.jpg?raw=true" alt="Logo" width="80%" height="80%" />
 </p>
 
   To avoid this error:
